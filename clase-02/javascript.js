@@ -2,39 +2,32 @@
 
 // for
 
-
-for (let i = 10; i >= 1; i--) {
-    
+for(let i = 0; i <= 10; i++){
     console.log(i)
-
 }
 
 let palabra = "corral"
 
-for(let i = 0; i < palabra.length; i++){
-
-    console.log(palabra[i])
-
-}
 
 for(let i = palabra.length - 1; i >= 0; i--){
-
     console.log(palabra[i])
-
 }
 
 // Halla la media
 let notas = [7, 3, 6, 9, 6, 5, 7]
+let total = 0
 
 for(let i = 0; i < notas.length; i++){
-    
-   
-
+    total += notas[i]
 }
 
-
+console.log(total / notas.length)
 
 // Ejercicio for 
+
+let nombre = "Illita"
+
+console.log(`Hola ${nombre}`)
 
 // Haz un for que salude mediante un console.log a todos los nombres del array
 let personas = ["Nuria", "Lucia", "Miguel", "Marta", "Juanpe"]
@@ -55,6 +48,31 @@ let perros = [
         age: 1
     }
 ]
+
+for(let i = 0; i < perros.length; i++){
+    console.log(`Hola ${perros[i].name}, tienes ${perros[i].age} años `)
+}
+
+
+function saludo(){
+    console.log("Hola buenos días")
+}
+
+saludo()
+
+function saludar(nombre, edad){
+    return `Hola ${nombre}, tienes ${edad} años`
+}
+
+let container = saludar("Illita", 3)
+saludar("Ternasco", 7)
+
+console.log(saludar("Illita", 3))
+
+
+const buen_dia = (name)=>{
+    console.log(`Hola ${name}`)
+}
 
 // for
     // Haz una función que reciba como parámetro un string y devuelva mediante un console.log() cada uno de los caracteres
